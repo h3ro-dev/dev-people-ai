@@ -17,26 +17,37 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Human-centered HR color palette */
+    --primary: 0 65% 69%; /* Warm coral #FF6B6B */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 262 52% 47%; /* Deep purple #9B5DE5 */
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
+    --muted: 220 13% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 262 52% 47%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 0 65% 69%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* HR-specific gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 65% 69%), hsl(262 52% 47%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 13% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 97%));
+    
+    /* Shadows for depth */
+    --shadow-soft: 0 4px 20px hsl(0 65% 69% / 0.15);
+    --shadow-card: 0 8px 32px hsl(262 52% 47% / 0.1);
+    --shadow-button: 0 4px 16px hsl(0 65% 69% / 0.3);
 
     --sidebar-background: 0 0% 98%;
 
