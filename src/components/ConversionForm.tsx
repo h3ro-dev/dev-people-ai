@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { submitLead } from "@/lib/lead";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -21,8 +21,9 @@ const ConversionForm = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    await submitLead(formData as any);
     // Form submission will be handled once Supabase is connected
     console.log("Form submitted - Supabase integration needed");
   };
